@@ -1,9 +1,9 @@
 import React, { Suspense, lazy } from 'react';
 import { BrowserRouter, Switch, Route } from "react-router-dom";
-const HomePage = lazy(() => import('Pages/Home'));
-const SamplePage1 = lazy(() => import('Pages/Sample1'));
+const HomePage = lazy(() => import('Modules/Home'));
+const SamplePage1 = lazy(() => import('Modules/Sample1'));
 
-const Routers = () => {
+const Modules = () => {
     return (<BrowserRouter>
         <Suspense fallback={<div>Loading...</div>}>
             <Switch>
@@ -18,4 +18,4 @@ const Routers = () => {
     </BrowserRouter>)
 }
 
-export default Routers;
+export default Modules;

@@ -1,9 +1,12 @@
-import React, { Children } from 'react';
+import React from 'react';
+import Container from '@mui/material/Container';
+import LogIn from 'Modules/LogIn';
 
 const PageWrapper = ({children}) => {
-    return (<div>
+    return (<Container>
         {children}
-    </div>)
+        <LogIn />
+    </Container>)
 }
 
 export default PageWrapper;
